@@ -1,0 +1,127 @@
+/* ===== Global Reset ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+}
+
+/* ===== Bright & Cheerful Background ===== */
+body {
+    background: linear-gradient(135deg, #ffecd2, #fcb69f); /* peach + coral */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ===== Main Container ===== */
+.container {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 470px;
+    margin: 60px auto;
+    padding: 34px;
+    border-radius: 18px;
+    box-shadow: 0 16px 35px rgba(0, 0, 0, 0.18);
+}
+
+/* ===== Headings ===== */
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #2f2f2f;
+}
+
+.subtitle {
+    text-align: center;
+    margin-bottom: 28px;
+    font-size: 14px;
+    color: #6b6b6b;
+}
+
+/* ===== Form Groups ===== */
+.form-group {
+    margin-bottom: 22px;
+}
+
+/* ===== Labels ===== */
+label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: 600;
+    color: #3a3a3a;
+}
+
+/* ===== Inputs & Textarea ===== */
+input,
+textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: 10px;
+    border: 1px solid #e0e0e0;
+    font-size: 14px;
+    background-color: #fffaf5;
+    transition: border-color 0.3s, box-shadow 0.3s, background-color 0.3s;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #b0b0b0;
+}
+
+/* ===== Focus State (Warm Accent) ===== */
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #f2994a;
+    box-shadow: 0 0 0 3px rgba(242, 153, 74, 0.35);
+    background-color: #ffffff;
+}
+
+/* ===== Textarea ===== */
+textarea {
+    resize: none;
+    height: 135px;
+}
+
+/* ===== Submit Button (Vibrant Look) ===== */
+button {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(135deg, #ff7a18, #ffb347); /* orange + gold */
+    color: #ffffff;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.3s, opacity 0.3s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 22px rgba(255, 122, 24, 0.45);
+    opacity: 0.96;
+}
+
+button:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+/* ===== Footer ===== */
+footer {
+    margin-top: auto;
+    text-align: center;
+    padding: 16px;
+    font-size: 13px;
+    color: #4f4f4f;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 480px) {
+    .container {
+        margin: 30px 15px;
+        padding: 26px;
+    }
+}
